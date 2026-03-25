@@ -727,31 +727,70 @@
                         <p class="text-sm text-slate-400 italic mb-6 ml-8">
                             Todas las herramientas de este portfolio han sido conceptualizadas, desarrolladas y desplegadas en entornos cloud (Vercel / Netlify), contando con repositorios propios en GitHub y documentación técnica (README) para facilitar su escalabilidad.
                         </p>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ml-8">
-                            <div class="glass-panel p-4 rounded-xl">
-                                <h4 class="font-bold text-slate-50 font-display mb-1">Monitor de edictos del BOE</h4>
-                                <p class="text-sm text-slate-400">Aplicación para analizar el BOE y extraer la información que contienen los edictos judiciales de procedimientos concursales.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ml-0 md:ml-8">
+                            <!-- Monitor BOE -->
+                            <div class="glass-panel p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/50 transition-all duration-300 flex flex-col h-full relative overflow-hidden group/card cursor-pointer" onclick="openAppModal('monitor-boe')">
+                                <div class="w-full aspect-video bg-gray-800 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative">
+                                    <img src="./img/apps/monitor-boe.jpg" alt="Monitor BOE" class="w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-105" />
+                                </div>
+                                <h4 class="text-slate-200 font-bold text-lg mb-1">Monitor BOE</h4>
+                                <p class="text-slate-400 text-sm flex-grow mb-4">Sistema automatizado para la monitorización, extracción y análisis de publicaciones del Boletín Oficial del Estado (BOE) utilizando técnicas de procesamiento de lenguaje natural.</p>
+                                <div class="flex gap-2 mt-auto">
+                                    <button class="flex-1 bg-white/10 hover:bg-white/20 text-slate-200 text-xs py-2 rounded-lg flex items-center justify-center gap-1 transition-colors font-medium">
+                                        <span class="material-symbols-outlined text-[16px]">info</span> Saber más
+                                    </button>
+                                </div>
                             </div>
-                            <div class="glass-panel p-4 rounded-xl">
-                                <h4 class="font-bold text-slate-50 font-display mb-1">Gestión inteligente del correo electrónico</h4>
-                                <p class="text-sm text-slate-400">Analiza, resume y categoriza correos y adjuntos. Transforma una tarea manual de 1 hora diaria del en un proceso de 5 minutos.</p>
+
+                            <!-- Landing MencIA -->
+                            <div class="glass-panel p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/50 transition-all duration-300 flex flex-col h-full relative overflow-hidden group/card cursor-pointer" onclick="openAppModal('landing-mencia')">
+                                <div class="w-full aspect-video bg-gray-800 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative">
+                                    <img src="./img/apps/landing-mencia.jpg" alt="Landing MencIA" class="w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-105" />
+                                </div>
+                                <h4 class="text-slate-200 font-bold text-lg mb-1">Landing MencIA</h4>
+                                <p class="text-slate-400 text-sm flex-grow mb-4">Prueba de lanzamiento de la landing page de MencIA-Estrategia de Inteligencia Artificial de la Diputación de Lugo (en desarrollo)</p>
+                                <div class="flex gap-2 mt-auto">
+                                    <button class="flex-1 bg-white/10 hover:bg-white/20 text-slate-200 text-xs py-2 rounded-lg flex items-center justify-center gap-1 transition-colors font-medium">
+                                        <span class="material-symbols-outlined text-[16px]">info</span> Saber más
+                                    </button>
+                                </div>
                             </div>
-                            <div class="glass-panel p-4 rounded-xl">
-                                <h4 class="font-bold text-slate-50 font-display mb-1">Ágora de prompts</h4>
-                                <p class="text-sm text-slate-400">Repositorio centralizado para crear, almacenar y compartir prompts entre empleados públicos, con buscador en tiempo real, etiquetado y panel de estadísticas.</p>
+
+                            <!-- Guías AESIA -->
+                            <div class="glass-panel p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/50 transition-all duration-300 flex flex-col h-full relative overflow-hidden group/card cursor-pointer" onclick="openAppModal('guias-aesia')">
+                                <div class="w-full aspect-video bg-gray-800 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative">
+                                    <img src="./img/apps/guias-aesia.jpg" alt="Guías AESIA" class="w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-105" />
+                                </div>
+                                <h4 class="text-slate-200 font-bold text-lg mb-1">Guias AESIA 4.0</h4>
+                                <p class="text-slate-400 text-sm flex-grow mb-4">Plataforma de aprendizaje interactiva de las guías prácticas para el cumplimiento del RIA publicadas por la AESIA. Incluye flashcards, cuestionarios, glosario y juegos educativos. (en desarrollo)</p>
+                                <div class="flex gap-2 mt-auto">
+                                    <button class="flex-1 bg-white/10 hover:bg-white/20 text-slate-200 text-xs py-2 rounded-lg flex items-center justify-center gap-1 transition-colors font-medium">
+                                        <span class="material-symbols-outlined text-[16px]">info</span> Saber más
+                                    </button>
+                                </div>
                             </div>
-                            <div class="glass-panel p-4 rounded-xl">
-                                <h4 class="font-bold text-slate-50 font-display mb-1">Calculadora de plazos de la LCSP (Ley 9/2017)</h4>
-                                <p class="text-sm text-slate-400">Calcula automáticamente plazos de contratación pública según procedimiento, importe y tramitación, adaptada al calendario laboral de Lugo.</p>
+
+                            <!-- Calculadora LCSP -->
+                            <div class="glass-panel p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/50 transition-all duration-300 flex flex-col h-full relative overflow-hidden group/card cursor-pointer" onclick="openAppModal('calculadora-lcsp')">
+                                <div class="w-full aspect-video bg-gray-800 rounded-lg mb-4 flex items-center justify-center overflow-hidden relative">
+                                    <img src="./img/apps/calculadora-lcsp.jpg" alt="Calculadora LCSP" class="w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-105" />
+                                </div>
+                                <h4 class="text-slate-200 font-bold text-lg mb-1">Calculadora LCSP Lugo</h4>
+                                <p class="text-slate-400 text-sm flex-grow mb-4">Herramienta web para el cálculo automatizado de plazos administrativos establecidos en la Ley 9/2017, de Contratos del Sector Público (LCSP), adaptada al calendario festivo de Lugo y la Comunidad Autónoma de Galicia (en desarrollo)</p>
+                                <div class="flex gap-2 mt-auto">
+                                    <button class="flex-1 bg-white/10 hover:bg-white/20 text-slate-200 text-xs py-2 rounded-lg flex items-center justify-center gap-1 transition-colors font-medium">
+                                        <span class="material-symbols-outlined text-[16px]">info</span> Saber más
+                                    </button>
+                                </div>
                             </div>
-                            <div class="glass-panel p-4 rounded-xl">
-                                <h4 class="font-bold text-slate-50 font-display mb-1">Guías AESIA 4.0</h4>
-                                <p class="text-sm text-slate-400">Plataforma de aprendizaje interactiva que integra las 16 guías prácticas para el cumplimiento del RIA publicadas por la AESIA. Incluye elementos de gamificación para facilitar el aprendizaje (Sala de escape digital, el rosco, flashcards).</p>
-                            </div>
-                            <div class="glass-panel p-4 rounded-xl">
-                                <h4 class="font-bold text-slate-50 font-display mb-1">Portal interactivo de la estrategia MencIA</h4>
-                                <p class="text-sm text-slate-400">Landing page inmersiva y trilingüe para la Estrategia de Inteligencia Artificial de la Diputación de Lugo. Ofrece una experiencia de usuario (UX/UI) premium con animaciones avanzadas e integra simuladores interactivos para la alfabetización tecnológica.</p>
-                            </div>
+                        </div>
+
+                        <!-- Botón Ver Todo -->
+                        <div class="mt-8 flex justify-center">
+                            <button onclick="window.open('https://github.com/ariaslombardero', '_blank')" class="px-6 py-2 bg-[var(--bg-dark)] border border-white/10 hover:border-[var(--primary)] text-[var(--primary)] hover:text-red-400 rounded-full font-medium transition-all duration-300 shadow-lg flex items-center gap-2 cursor-pointer">
+                                <span>Visita mi repositorio de proyectos</span>
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1146,5 +1185,178 @@
         });
     </script>
 
+    <!-- App Modal -->
+    <div id="app-modal" class="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center hidden opacity-0 transition-opacity duration-300 p-4">
+        <div class="bg-[#0a0a0a] border border-white/10 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-hidden flex flex-col relative shadow-2xl shadow-black/50 transform scale-95 transition-transform duration-300" id="app-modal-content">
+            <!-- Header -->
+            <div class="p-6 border-b border-white/10 flex items-start justify-between sticky top-0 bg-[#0a0a0a]/95 backdrop-blur z-10">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-red-500/10 flex items-center justify-center shrink-0 border border-red-500/20">
+                        <span class="material-symbols-outlined text-[var(--primary)]" id="modal-icon">apps</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-50 font-display" id="modal-title">Título de la App</h3>
+                        <p class="text-sm text-slate-400 mt-1" id="modal-desc">Descripción corta de la app.</p>
+                    </div>
+                </div>
+                <button onclick="closeAppModal()" class="text-slate-400 hover:text-white transition-colors p-1 rounded-lg hover:bg-white/10">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            
+            <!-- Body -->
+            <div class="p-6 overflow-y-auto flex-grow custom-scrollbar">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="text-red-500">📌</span>
+                    <h4 class="font-bold text-slate-200">Características principales</h4>
+                </div>
+                <ul class="space-y-3 text-sm text-slate-400" id="modal-features">
+                    <!-- Features will be injected here -->
+                </ul>
+            </div>
+            
+            <!-- Footer -->
+            <div class="p-6 border-t border-white/10 bg-[#0a0a0a] flex gap-3 justify-end sticky bottom-0">
+                <a href="#" target="_blank" id="modal-github-btn" class="px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 hover:text-white rounded-lg text-sm flex items-center gap-2 transition-colors">
+                    <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    Ver Código en GitHub
+                </a>
+                <a href="#" target="_blank" id="modal-web-btn" class="px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 hover:text-white rounded-lg text-sm flex items-center gap-2 transition-colors">
+                    <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+                    Probar APP
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const appData = {
+            'monitor-boe': {
+                title: 'Monitor BOE',
+                desc: 'Sistema automatizado para la monitorización, extracción y análisis de publicaciones del Boletín Oficial del Estado (BOE) utilizando técnicas de procesamiento de lenguaje natural.',
+                icon: 'policy',
+                features: [
+                    'Scraping automático del BOE — accede al Tablón Edictal Judicial Único y extrae todos los edictos de procedimientos concursales de la fecha indicada.',
+                    'Selección flexible de fechas — búsqueda por fecha única o por rango de fechas con selector de calendario.',
+                    'Filtrado geográfico — opción de procesar solo edictos de Galicia o todos los edictos de España.',
+                    'Tabla de resultados interactiva — visualización clara con deudor, CIF/DNI/NIE, número de concurso, fecha del auto y enlace directo al edicto original.',
+                    'Métricas de resumen — tarjetas con número de edictos encontrados, total de candidatos en la jornada y tiempo de proceso.',
+                    'Exportación múltiple — descarga de resultados en Excel (.xlsx), JSON y TXT con un solo clic.',
+                    'Historial de ejecuciones — almacena las últimas 10 búsquedas para recuperar resultados anteriores sin necesidad de volver a ejecutar el scraping.',
+                    'Texto completo de los edictos — visualización del contenido íntegro de cada edicto directamente en la aplicación, con formato fiel al original del BOE.',
+                    'Diseño adaptativo claro/oscuro — interfaz que responde automáticamente al tema seleccionado.'
+                ],
+                github: 'https://github.com/ariaslombardero/monitor-boe',
+                web: 'https://monitor-boe.vercel.app/'
+            },
+            'landing-mencia': {
+                title: 'Landing MencIA',
+                desc: 'Prueba de lanzamiento de la landing page de MencIA-Estrategia de Inteligencia Artificial de la Diputación de Lugo (en desarrollo)',
+                icon: 'language',
+                features: [
+                    'Arquitectura moderna — construida con React, Vite y Tailwind CSS para un rendimiento óptimo.',
+                    'Soporte multilingüe — sistema de internacionalización (i18n) completo en Español, Gallego e Inglés.',
+                    'Animaciones avanzadas — transiciones fluidas y efectos de scroll utilizando Framer Motion.',
+                    'Simuladores interactivos — módulos educativos integrados para la alfabetización en IA.',
+                    'Diseño responsive — adaptación perfecta a dispositivos móviles, tablets y escritorio.',
+                    'Modo oscuro/claro — soporte nativo para preferencias de tema del sistema.'
+                ],
+                github: 'https://github.com/ariaslombardero/landing-mencia',
+                web: 'https://mencia.deputacionlugo.gal/'
+            },
+            'guias-aesia': {
+                title: 'Guias AESIA 4.0',
+                desc: 'Plataforma de aprendizaje interactiva de las guías prácticas para el cumplimiento del RIA publicadas por la AESIA. Incluye flashcards, cuestionarios, glosario y juegos educativos. (en desarrollo)',
+                icon: 'school',
+                features: [
+                    'Integración normativa — contenido basado estrictamente en las directrices de la Agencia Española de Supervisión de Inteligencia Artificial.',
+                    'Gamificación educativa — incluye mecánicas de juego como salas de escape y roscos de palabras para mejorar la retención.',
+                    'Sistema de Flashcards — tarjetas de estudio interactivas para repasar conceptos clave del Reglamento de IA.',
+                    'Seguimiento de progreso — panel de usuario para visualizar el avance en los diferentes módulos formativos.',
+                    'Diseño accesible — interfaz clara y navegación intuitiva adaptada a todos los perfiles de la administración pública.'
+                ],
+                github: 'https://github.com/ariaslombardero/guias-aesia',
+                web: 'https://guias-aesia.vercel.app/'
+            },
+            'calculadora-lcsp': {
+                title: 'Calculadora LCSP Lugo',
+                desc: 'Herramienta web para el cálculo automatizado de plazos administrativos establecidos en la Ley 9/2017, de Contratos del Sector Público (LCSP), adaptada al calendario festivo de Lugo y la Comunidad Autónoma de Galicia (en desarrollo)',
+                icon: 'calculate',
+                features: [
+                    'Cálculo automatizado — determina fechas límite exactas basándose en la Ley 9/2017 de Contratos del Sector Público.',
+                    'Calendario laboral integrado — tiene en cuenta festivos nacionales, autonómicos (Galicia) y locales (Lugo).',
+                    'Múltiples procedimientos — soporta abierto, restringido, negociado, simplificado y supersimplificado.',
+                    'Exportación de informes — generación de documentos PDF con el desglose de plazos para el expediente.',
+                    'Interfaz intuitiva — diseño paso a paso que guía al usuario en la introducción de datos del contrato.'
+                ],
+                github: 'https://github.com/ariaslombardero/calculadora-lcsp',
+                web: 'https://calculadora-lcsp.vercel.app/'
+            }
+        };
+
+        function openAppModal(appId) {
+            const data = appData[appId];
+            if (!data) return;
+
+            document.getElementById('modal-title').textContent = data.title;
+            document.getElementById('modal-desc').textContent = data.desc;
+            document.getElementById('modal-icon').textContent = data.icon;
+            
+            const featuresList = document.getElementById('modal-features');
+            featuresList.innerHTML = data.features.map(f => `<li><span class="text-[var(--primary)] mr-2">•</span>${f}</li>`).join('');
+            
+            const githubBtn = document.getElementById('modal-github-btn');
+            if (data.github) {
+                githubBtn.href = data.github;
+                githubBtn.style.display = 'flex';
+            } else {
+                githubBtn.style.display = 'none';
+            }
+            
+            const webBtn = document.getElementById('modal-web-btn');
+            if (data.web) {
+                webBtn.href = data.web;
+                webBtn.style.display = 'flex';
+            } else {
+                webBtn.style.display = 'none';
+            }
+
+            const modal = document.getElementById('app-modal');
+            const modalContent = document.getElementById('app-modal-content');
+            
+            modal.classList.remove('hidden');
+            // Trigger reflow
+            void modal.offsetWidth;
+            modal.classList.remove('opacity-0');
+            modalContent.classList.remove('scale-95');
+            
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeAppModal() {
+            const modal = document.getElementById('app-modal');
+            const modalContent = document.getElementById('app-modal-content');
+            
+            modal.classList.add('opacity-0');
+            modalContent.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 300);
+        }
+
+        // Close modal on outside click
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('app-modal');
+            if(modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        closeAppModal();
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
